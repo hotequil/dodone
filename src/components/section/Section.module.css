@@ -1,0 +1,14 @@
+.title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: var(--border-primary);
+    width: fit-content;
+    padding-bottom: var(--space);
+    line-height: 1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--four-spaces);
+}
