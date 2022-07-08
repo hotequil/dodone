@@ -16,10 +16,17 @@
 html, body, #root{
     font-family: 'Inter', sans-serif;
     height: 100%;
-    font-size: 16px;
     color: var(--white);
     background-color: var(--black);
     line-height: 1.2;
+}
+
+html, body{
+    font-size: 16px;
+}
+
+#root{
+    font-size: 1rem;
 }
 
 ul, ol{
@@ -43,7 +50,7 @@ ul, ol{
 }
 
 @media(max-width: 800px){
-    html, body, #root{
+    html, body{
         font-size: 14px;
     }
 }
