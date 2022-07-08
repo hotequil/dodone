@@ -1,5 +1,5 @@
 import styles from "./App.module.css"
-import { Section } from "./components/section/Section";
+import { TasksPage } from "./pages/tasks/Tasks";
 
 export const App = () => {
   return (
@@ -9,8 +9,7 @@ export const App = () => {
         <h1 className={styles.title}>Dodone</h1>
       </header>
       <main className={styles.main}>
-        <Section title="New task">Test</Section>
-        <Section title="Task list">Test</Section>
+        <TasksPage />
       </main>
       <footer className={styles.footer}>Developed by hotequil</footer>
     </div>

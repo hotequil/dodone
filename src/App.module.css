@@ -20,9 +20,6 @@
     width: 100%;
     margin: var(--six-spaces) auto;
     border-radius: var(--space);
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--ten-spaces);
 }
 
 .header{
