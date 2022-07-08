@@ -1,0 +1,11 @@
+.notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--two-spaces);
+    background-color: var(--primary);
+    border-radius: var(--space);
+    color: var(--black);
+    font-weight: 500;
+}
