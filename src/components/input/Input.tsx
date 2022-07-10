@@ -14,7 +14,7 @@ export const Input = ({ label, name, value, placeholder, set, required, maxlengt
     const length = maxlength - (value?.length || 0)
 
     setCharsValidation(`${length} ${length >= 2 ? 'chars' : 'char'} remaining`)
-  }, [value])
+  }, [value, maxlength])
 
   return (
     <div className={styles.group}>
