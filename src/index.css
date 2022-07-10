@@ -1,16 +1,22 @@
 :root{
     --black: #131515;
     --grey: #2B2C28;
+    --light-grey: #a5a5a5;
     --green: #339989;
     --primary: #7DE2D1;
+    --red: #ff3c38;
     --white: #FFFAFB;
     --space: 4px;
+    --half-space: calc(var(--space) / 2);
     --two-spaces: calc(var(--space) * 2);
     --four-spaces: calc(var(--space) * 4);
     --six-spaces: calc(var(--space) * 6);
     --ten-spaces: calc(var(--space) * 10);
+    --font-size-control: 1rem;
+    --font-weight-control: 400;
     --border: 1px solid;
     --border-primary: var(--border) var(--primary);
+    --ms-transition: 200ms;
 }
 
 html, body, #root{

@@ -1,0 +1,61 @@
+.group{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space);
+}
+
+.label, .control, .group{
+    width: 100%;
+}
+
+.label{
+    font-size: .875rem;
+    font-weight: var(--font-weight-control);
+}
+
+.required::after{
+    content: " *";
+    color: var(--red);
+}
+
+.control{
+    padding: var(--two-spaces);
+    border-radius: var(--space);
+    background-color: var(--grey);
+    border: var(--border-primary);
+    outline: none;
+    color: var(--white);
+    font-size: var(--font-size-control);
+    transition: box-shadow var(--ms-transition);
+    font-weight: var(--font-weight-control);
+}
+
+.control::-webkit-input-placeholder{
+    color: var(--light-grey);
+    font-size: var(--font-size-control);
+    font-weight: var(--font-weight-control);
+}
+
+.control::placeholder{
+    color: var(--light-grey);
+    font-size: var(--font-size-control);
+    font-weight: var(--font-weight-control);
+}
+
+.control:-ms-input-placeholder{
+    color: var(--light-grey);
+    font-size: var(--font-size-control);
+    font-weight: var(--font-weight-control);
+}
+
+.control:focus{
+    border-color: var(--green);
+    box-shadow: inset 0 0 0 var(--half-space) var(--green);
+}
+
+.validation{
+    font-size: .75rem;
+    color: var(--light-grey);
+    font-weight: 400;
+    text-align: right;
+}
