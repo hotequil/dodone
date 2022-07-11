@@ -7,20 +7,22 @@ export const TaskItem = ({ task, onDelete, onDone }: TaskItemProps) =>
   <li className={`${styles.item} ${task.done ? styles.done : ''}`}>
     <span className={styles.title}>{task.title}</span>
 
-    {
-      !task.done &&
-      <Button className={styles.button}
-              onClick={onDone.bind(null, task.id)}
-              aria-label={`Task ${task.title} done`}>
-        <img src="./done.png" alt="Done icon"/>
-      </Button>
-    }
+    <div className={styles.actions}>
+      {
+        !task.done &&
+        <Button className={styles.button}
+                onClick={onDone.bind(null, task.id)}
+                aria-label={`Task ${task.title} done`}>
+          <img src="./done.png" alt="Done icon"/>
+        </Button>
+      }
 
-    <Button className={styles.button}
-            onClick={onDelete.bind(null, task.id)}
-            aria-label={`Delete task ${task.title}`}>
-      <img src="./delete.png" alt="Delete icon"/>
-    </Button>
+      <Button className={styles.button}
+              onClick={onDelete.bind(null, task.id)}
+              aria-label={`Delete task ${task.title}`}>
+        <img src="./delete.png" alt="Delete icon"/>
+      </Button>
+    </div>
   </li>
 
 TaskItem.propTypes = {

@@ -5,14 +5,18 @@
 }
 
 .item{
-    display: flex;
-    align-items: center;
-    column-gap: var(--two-spaces);
     padding: var(--two-spaces);
     background-color: var(--black-opacity-56);
     border-radius: var(--space);
     border-bottom: var(--space) solid var(--primary);
     transition: border-bottom-color var(--ms-transition);
+}
+
+.actions, .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--two-spaces);
 }
 
 .button{
@@ -47,4 +51,10 @@
 
 .item.done{
     border-bottom-color: var(--light-grey);
+}
+
+@media (max-width: 600px){
+    .actions{
+        flex-direction: column;
+    }
 }
