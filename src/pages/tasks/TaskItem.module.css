@@ -20,7 +20,7 @@
 }
 
 .button{
-    --action-button-size: 32px;
+    --action-button-size: 32px !important;
 
     border: none;
     padding: var(--two-spaces);
