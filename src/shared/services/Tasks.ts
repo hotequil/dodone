@@ -8,12 +8,12 @@ export class TasksService{
     let tasks: Tasks|null = null
 
     try{
-      tasks = JSON.parse(localStorage.getItem(this.KEY) || "")
+      tasks = JSON.parse(localStorage.getItem(this.KEY) || "[]")
     } catch(error){
       console.error(error)
     }
 
-    if(!Array.isArray(tasks)) this.set(tasks = [])
+    if(!Array.isArray(tasks) || !tasks?.length) this.set(tasks = [])
 
     return tasks
   }
