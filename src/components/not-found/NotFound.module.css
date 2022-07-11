@@ -3,9 +3,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: var(--two-spaces);
+    padding: var(--four-spaces);
     background-color: var(--green);
     border-radius: var(--space);
     color: var(--black);
-    font-weight: 500;
+    font-weight: 400;
+    flex-direction: column;
+    row-gap: var(--two-spaces);
 }
