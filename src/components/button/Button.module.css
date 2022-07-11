@@ -1,0 +1,32 @@
+.button{
+    border: none;
+    background-color: var(--primary);
+    font-weight: 600;
+    color: var(--black);
+    font-size: 1rem;
+    padding: var(--two-spaces) var(--four-spaces);
+    outline: none;
+    border-radius: var(--space);
+    cursor: pointer;
+    transition: background-color var(--ms-transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: var(--two-spaces);
+}
+
+.button:disabled{
+    cursor: default;
+    background-color: var(--light-grey);
+}
+
+.button:focus:not(:disabled){
+    background-color: var(--green);
+}
+
+@media(max-width: 600px){
+    .button{
+        width: 100%;
+    }
+}
