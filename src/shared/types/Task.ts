@@ -5,3 +5,9 @@ export interface Task{
 }
 
 export type Tasks = Task[]
+
+export interface TaskItemProps{
+  task: Task,
+  onDelete: Function,
+  onDone: Function,
+}
