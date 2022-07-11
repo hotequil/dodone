@@ -22,6 +22,7 @@ export const Input = ({ label, name, value, placeholder, set, required, maxlengt
       <input type="text"
              className={styles.control}
              required={required}
+             value={value}
              maxLength={maxlength}
              name={name}
              placeholder={placeholder}
