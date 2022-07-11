@@ -1,5 +1,6 @@
 :root{
     --black: #131515;
+    --black-opacity-56: rgba(19, 21, 21, 0.56);
     --grey: #2B2C28;
     --light-grey: #a5a5a5;
     --green: #339989;
