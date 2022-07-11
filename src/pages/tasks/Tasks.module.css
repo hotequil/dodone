@@ -1,0 +1,22 @@
+.tasks{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--ten-spaces);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--two-spaces);
+}
+
+.actionsForm{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--two-spaces);
+}
