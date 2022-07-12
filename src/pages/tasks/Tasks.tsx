@@ -6,7 +6,7 @@ import { NotFound } from "../../components/not-found/NotFound";
 import { Input } from "../../components/input/Input";
 import { Button } from "../../components/button/Button";
 import { Tasks } from "../../shared/types/Task";
-import { TaskItem } from "./TaskItem";
+import { TaskItem } from "./TaskItem"
 
 const service = new TasksService()
 
