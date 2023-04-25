@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     row-gap: var(--ten-spaces);
+    width: 100%;
 }
 
 .list{
