@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Storybook
+The project has the components documentation in [Storybook](https://dodone-tasks-storybook.netlify.app).
+
+### To use in dev
+You need to run `npm run storybook`.
+
+### To build in prod
+You need to run `npm run build-storybook`.
+
 ## Available Scripts
 
 In the project directory, you can run:
