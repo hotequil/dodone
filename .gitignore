@@ -126,3 +126,6 @@ dist
 
 # ide
 .idea
+
+# Storybook
+storybook-static/
