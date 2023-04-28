@@ -1,0 +1,40 @@
+import { Meta, ArgsTable, Canvas, Story } from "@storybook/addon-docs"
+import { TaskItem } from "./TaskItem"
+import { uniqueId } from "../../shared/helpers/unique-id"
+
+<Meta title="Tasks/TaskItem" component={TaskItem} />
+
+# TaskItem
+The TaskItem shows a text with some actions for done or delete.
+
+<ArgsTable of={TaskItem} />
+
+<Canvas>
+    <Story name="Undone"
+           args={{
+               task: {
+                   id: uniqueId(),
+                   title: "Buy beer",
+                   done: false,
+               },
+               onDone: () => alert("Done task"),
+               onDelete: () => alert("Deleted task"),
+           }}>
+        { args => <TaskItem {...args} /> }
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Done"
+           args={{
+               task: {
+                   id: uniqueId(),
+                   title: "Buy coffee",
+                   done: true,
+               },
+               onDone: () => alert("Done task"),
+               onDelete: () => alert("Deleted task"),
+           }}>
+        { args => <TaskItem {...args} /> }
+    </Story>
+</Canvas>
